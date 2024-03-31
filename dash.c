@@ -448,22 +448,4 @@ void bash_mode(const char *batch_file_name)
     }
 }
 
-int main(int argc, char *argv[])
-{
-    if (argc == 1)
-    {
-        /* interactive mode if no file is given*/
-        interactive_mode();
-    }
-    else if (argc == 2)
-    {
-        /* bash mode if file is given as an argument*/
-        bash_mode(argv[1]);
-    }
-    else
-    {
-        /*if multiple files are given as input*/
-        printf("An error has occured\n");
-    }
-    return 0;
-}
+
